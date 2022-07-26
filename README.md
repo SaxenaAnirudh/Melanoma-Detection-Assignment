@@ -1,52 +1,44 @@
-# Project Name
-> Outline a brief description of your project.
+# Melanoma Detection Assignment
+> Problem statement: To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+
+The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
+
+The data set contains the following diseases:
+
+Actinic keratosis
+Basal cell carcinoma
+Dermatofibroma
+Melanoma
+Nevus
+Pigmented benign keratosis
+Seborrheic keratosis
+Squamous cell carcinoma
+Vascular lesion
+
+## Project Pipeline
+Data Reading/Data Understanding 
+Dataset Creation
+Dataset visualisation 
+Model Building & training : 
+Created a CNN model, which could accurately detect 9 classes present in the dataset. While building the model, rescale images to normalize pixel values between (0,1).
+Choosing an appropriate optimiser and loss function for model training
+Training the model for ~20 epochs
 
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+Chosing an appropriate data augmentation strategy to resolve underfitting/overfitting 
+Model Building & training on the augmented data :
+Create a CNN model, which can accurately detect 9 classes present in the dataset. While building the model rescale images to normalize pixel values between (0,1).
+Choosing an appropriate optimiser and loss function for model training
+Training the model for ~20 epochs
 
-<!-- You can include any other section that is pertinent to your problem -->
+Class distribution
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+Handling class imbalances: Rectifying class imbalances present in the training dataset with Augmentor library.
+Model Building & training on the rectified class imbalance data 
+Training the model for ~30 epochs
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- python - version 3.0
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@SaxenaAnirudh] - feel free to contact me!
